@@ -60,6 +60,12 @@ export default function HomeScreen({ navigate }) {
           description="Profile layout"
           onClick={() => navigate('b')}
         />
+        <div style={{ height: 1, background: '#F2F2F7', margin: '0 20px' }} />
+        <NavRow
+          label="Prototype C"
+          description="Contacts — long scroll list"
+          onClick={() => navigate('c')}
+        />
         <div style={{ height: 1, background: '#F2F2F7' }} />
       </div>
     </div>

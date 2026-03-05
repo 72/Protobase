@@ -1,4 +1,5 @@
 import NavHeader from '../components/NavHeader'
+import ScrollView from '../components/ScrollView'
 
 const stats = [
   { label: 'Following', value: '284' },
@@ -18,7 +19,7 @@ export default function ScreenB({ goBack, canGoBack }) {
       <div style={{ height: 50, flexShrink: 0 }} />
       <NavHeader title="Profile" canGoBack={canGoBack} onBack={goBack} />
 
-      <div style={{ flex: 1, overflowY: 'auto', paddingBottom: 34 }}>
+      <ScrollView style={{ flex: 1, paddingBottom: 34 }}>
         {/* Profile header */}
         <div style={{ padding: '24px 20px 20px', display: 'flex', alignItems: 'center', gap: 16 }}>
           <div style={{
@@ -97,7 +98,7 @@ export default function ScreenB({ goBack, canGoBack }) {
             </div>
           ))}
         </div>
-      </div>
+      </ScrollView>
     </div>
   )
 }

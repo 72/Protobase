@@ -1,4 +1,5 @@
 import NavHeader from '../components/NavHeader'
+import ScrollView from '../components/ScrollView'
 
 const posts = [
   { id: 1, handle: 'mia.chen', time: '2m', text: 'Shipping something small but meaningful today. The details matter.' },
@@ -56,7 +57,7 @@ export default function ScreenA({ goBack, canGoBack }) {
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <div style={{ height: 50, flexShrink: 0 }} />
       <NavHeader title="Feed" canGoBack={canGoBack} onBack={goBack} />
-      <div style={{ flex: 1, overflowY: 'auto', paddingBottom: 34 }}>
+      <ScrollView style={{ flex: 1, paddingBottom: 34 }}>
         {posts.map((post, i) => (
           <div key={post.id}>
             <Post {...post} />
@@ -65,7 +66,7 @@ export default function ScreenA({ goBack, canGoBack }) {
             )}
           </div>
         ))}
-      </div>
+      </ScrollView>
     </div>
   )
 }

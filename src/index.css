@@ -3,6 +3,17 @@
 * {
   cursor: none !important;
   box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Hide scrollbars while keeping scroll functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 body {

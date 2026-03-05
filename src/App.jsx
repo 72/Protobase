@@ -4,8 +4,9 @@ import StatusBar from './components/StatusBar'
 import HomeScreen from './screens/HomeScreen'
 import ScreenA from './screens/ScreenA'
 import ScreenB from './screens/ScreenB'
+import ScreenC from './screens/ScreenC'
 
-const SCREEN_MAP = { home: HomeScreen, a: ScreenA, b: ScreenB }
+const SCREEN_MAP = { home: HomeScreen, a: ScreenA, b: ScreenB, c: ScreenC }
 const DURATION = 320
 const EASE = 'cubic-bezier(0.4, 0, 0.2, 1)'
 
